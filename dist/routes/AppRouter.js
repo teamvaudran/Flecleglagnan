@@ -16,10 +16,9 @@ class AppRouter {
    */
     init() {
         this.router.get('/', (req, res, next) => {
-            let messages = res.locals.has_flashed_messages() ? res.locals.get_flashed_messages() : [];
+            //let messages = res.locals.has_flashed_messages() ? res.locals.get_flashed_messages() : [];
             res.render('index', {
                 title: 'Bienvenue sur notre projet',
-                flashedMessages: messages
             });
         });
     }
