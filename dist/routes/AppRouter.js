@@ -21,6 +21,12 @@ class AppRouter {
                 title: 'Bienvenue sur notre projet',
             });
         });
+        this.router.get('/legume', (req, res, next) => {
+            //let messages = res.locals.has_flashed_messages() ? res.locals.get_flashed_messages() : [];
+            res.render('legume', {
+                title: 'legume titre ',
+            });
+        });
     }
 }
 exports.AppRouter = AppRouter;

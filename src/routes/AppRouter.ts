@@ -28,5 +28,13 @@ export class AppRouter {
         //flashedMessages: messages
       });
     });
+
+    this.router.get('/legume', (req, res, next) => {
+      //let messages = res.locals.has_flashed_messages() ? res.locals.get_flashed_messages() : [];
+      res.render('legume', {
+        title: 'legume titre ',
+        //flashedMessages: messages
+      });
+    });
 }
 }

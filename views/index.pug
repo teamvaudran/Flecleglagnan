@@ -1,13 +1,9 @@
-THE CONVERTED OUTPUG WILL APPEAR HERE
-
-doctype html
-head
-    title Pug
-    script(type='text/javascript').
-        if (foo) bar(1 + 5)
+include partials/header.pug
+    title Bienvenue sur la page de Flecleglagnan
 body
-    h1 RODRYGO
-    #container.col
-        p You are amazing
-        p Pug is a terse and simple templating language.
+    br
+    .container
+        .row
+            a.btn.btn-primary(href='/') Accueil 
+            a.btn.btn-success(href='/legume' role='button') Légumes
             
